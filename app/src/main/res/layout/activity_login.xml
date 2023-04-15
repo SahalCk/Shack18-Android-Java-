@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#035350"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="3dp"
+            android:fontFamily="@font/eacologica"
+            android:text="Login to "
+            android:textColor="#DB7916"
+            android:textSize="33dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/textview"
+            android:elevation="3dp"
+            android:fontFamily="@font/eacologica"
+            android:text="Shack 18"
+            android:textColor="#1E1C1F"
+            android:textSize="33dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:src="@drawable/toproundeddesign"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/shack"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/container" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cafe &amp; Restaurant"
+        android:textColor="#7D7D7D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintVertical_bias="0.648"
+        android:layout_marginBottom="35dp"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/employeeid"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/password_bg"
+            android:inputType="textCapCharacters"
+            android:maxLength="5"
+            android:textAlignment="center"
+            android:padding="3dp"
+            android:textColor="@color/black"
+            android:textColorHint="#A8A8A8"
+            android:hint="Enter Employee ID"
+            android:textSize="25dp"
+            android:elevation="3dp"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/password_bg"
+            android:inputType="numberPassword"
+            android:maxLength="4"
+            android:textAlignment="center"
+            android:padding="3dp"
+            android:textColor="@color/black"
+            android:textColorHint="#A8A8A8"
+            android:hint="Enter Login PIN"
+            android:textSize="25dp"
+            android:elevation="3dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginbutton"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:background="@drawable/button_green"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:elevation="3dp"/>
+
+    </LinearLayout>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:fab_addButtonColorNormal="#035350"
+        app:fab_addButtonColorPressed="#099F9A"
+        app:fab_addButtonPlusIconColor="@color/white"
+        app:fab_addButtonSize="normal"
+        app:fab_labelStyle="@style/customfab"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="15dp">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/adminpanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="#AEACAC"
+            app:fab_size="normal"
+            app:fab_icon="@drawable/admin"
+            app:fab_title="Login to Admin Panel"/>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/writefeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="#AEACAC"
+            app:fab_size="normal"
+            app:fab_icon="@drawable/feedback"
+            app:fab_title="Facing any Issue ?"/>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/contactadmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="#AEACAC"
+            app:fab_size="normal"
+            app:fab_icon="@drawable/whatsapp"
+            app:fab_title="Contact Admin"/>
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

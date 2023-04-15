@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "137317515026",
+    "project_id": "shack-18-6ecde",
+    "storage_bucket": "shack-18-6ecde.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:137317515026:android:84bb3db4a55148b590fdcb",
+        "android_client_info": {
+          "package_name": "com.shack.andrahalli"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "137317515026-45a3d3aespbtu0kh8toasq9khfe9luee.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApti9mAFA2tXpHmGxeRRhgsDHgUfPJlMc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "137317515026-45a3d3aespbtu0kh8toasq9khfe9luee.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
